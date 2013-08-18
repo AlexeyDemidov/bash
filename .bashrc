@@ -63,8 +63,10 @@ export PS1
 #[[ -s '/etc/profile.d/rvm.sh' ]] && source '/etc/profile.d/rvm.sh'
 #[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
-source /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-completion.bash
-source /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-prompt.sh
+if [[ -r /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-completion.bash ]]; then
+  source /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-completion.bash
+  source /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-prompt.sh
+fi
 
 debug '> .bashrc done'
 
