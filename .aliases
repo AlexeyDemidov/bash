@@ -1,0 +1,70 @@
+#!/bin/sh
+
+debug '> .aliases'
+
+alias realias='$EDITOR ~/.aliases; . ~/.aliases'
+
+alias more='less'
+alias m='less'
+alias tailf='tail -F'
+
+# alias ls='ls -F'
+alias lla='ls -la'
+alias ll='ls -lF'
+alias llm='ll -lF | m'
+alias lsm='ls -F  | m'
+
+alias h='history | tail'
+alias trc='/usr/sbin/traceroute' # FIXME
+alias j='jobs'
+alias igrep='grep -i'
+alias fp='ps ax|grep '
+alias rake='rake -q'
+alias tin='tin -r'
+alias mc='mc -cs'
+
+alias pinfo='LANG="" pinfo'
+alias kssh='konsole --profile Shell -e ssh '
+alias rar='unrar'
+alias kpdf='okular'
+
+alias rmv=rvm
+alias gits='git status -s'
+#alias gitb='git branch'
+#alias gitd='git diff'
+#alias be='bundle exec'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
+
+if [[ "`uname -s`" == "Linux" ]]
+then
+    alias midc='mc'
+    alias lc='ls -F --color'
+    alias ack='ack-grep'
+    alias md5=md5sum
+    alias pkg_info='dpkg -l'
+    alias pkg_which='dpkg -S'
+    if df --help | grep -- --total > /dev/null ; then
+        alias df='df -h --total'
+    else
+        alias df='df -h'
+    fi
+fi
+
+if [[ "`uname -s`" == "FreeBSD" ]]
+then
+    alias df='df -hc'
+fi
+
+if [[ "`uname -s`" == "Darwin" ]]
+then
+    alias df='df -h'
+fi
+
+if [[ -f ~/.aliases.$HOSTNAME ]]
+then
+    . ~/.aliases.$HOSTNAME
+fi
+debug '> .aliases done'

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+source ~/.functions
+
+debug '> .bash_env'
+
+if [ -f ~/.bash_env.${HOSTNAME} ]; then
+        . ~/.bash_env.$HOSTNAME
+fi
+
+if [ -f ~/.env ]; then
+        . ~/.env
+fi
+debug '> .bash_env done'

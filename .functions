@@ -1,0 +1,21 @@
+#!/bin/sh
+
+debug()
+{
+    [ -f $HOME/.skel_debug ] && skel_debug="true"
+
+    case ${skel_debug} in
+    [Yy][Ee][Ss]|[Tt][Rr][Uu][Ee]|[Oo][Nn]|1)
+#        if [ -x /usr/bin/logger ]; then
+#            logger "$0: DEBUG: $*"
+#        fi
+        echo 1>&2 "$0: DEBUG: $*"
+        ;;
+    esac
+}
+
+error()
+{
+    echo 1>&2 "$0: ERROR: $*"
+    exit 1
+}

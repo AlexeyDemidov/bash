@@ -1,0 +1,12 @@
+#!/bin/sh
+
+debug "> .shrc loaded"
+if [ -f $HOME/.aliases ]
+then
+  . $HOME/.aliases
+fi
+if [ -f $HOME/.env ]
+then
+  . $HOME/.env
+fi
+debug "> .shrc done"
