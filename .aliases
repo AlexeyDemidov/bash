@@ -37,6 +37,11 @@ alias gits='git status -s'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+alias swt3='ssh webtrans3.dh.bytemark.co.uk'
+alias swt5='mosh webtrans5.dh.bytemark.co.uk'
+alias snmx='mosh mx.nouri.sh'
+alias sst='mosh staging.nouri.sh'
+alias sdev='mosh dev.rebuildingsociety.com'
 
 if [[ "`uname -s`" == "Linux" ]]
 then
