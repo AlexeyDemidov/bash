@@ -59,8 +59,8 @@ fi
 export PS1
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-#[[ -s '/usr/local/lib/rvm' ]] && source '/usr/local/lib/rvm'
-#[[ -s '/etc/profile.d/rvm.sh' ]] && source '/etc/profile.d/rvm.sh'
+[[ -s '/usr/local/lib/rvm' ]] && source '/usr/local/lib/rvm'
+[[ -s '/etc/profile.d/rvm.sh' ]] && source '/etc/profile.d/rvm.sh'
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 if [[ -r /Applications/Xcode.app/Contents//Developer/usr/share/git-core/git-completion.bash ]]; then
