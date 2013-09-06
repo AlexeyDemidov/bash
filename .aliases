@@ -33,6 +33,13 @@ alias gits='git status -s'
 #alias gitb='git branch'
 #alias gitd='git diff'
 #alias be='bundle exec'
+alias be="bundle exec"
+alias bi="bundle install"
+alias bl="bundle list"
+alias bp="bundle package"
+alias bo="bundle open"
+alias bu="bundle update"
+
 
 alias ..='cd ..'
 alias ...='cd ../..'
