@@ -5,12 +5,13 @@ debug '> .aliases'
 alias realias='$EDITOR ~/.aliases; . ~/.aliases'
 
 alias more='less'
+alias v='vim'
 alias m='less'
 alias tailf='tail -F'
 
 # alias ls='ls -F'
 alias lla='ls -la'
-alias ll='ls -lF'
+alias ll='echo use l'
 alias llm='ll -lF | m'
 alias lsm='ls -F  | m'
 
