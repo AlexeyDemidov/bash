@@ -51,6 +51,8 @@ alias swt6='mosh webtrans6.dh.bytemark.co.uk'
 alias smx='mosh mx.nouri.sh'
 alias sst='mosh staging.nouri.sh'
 alias sdev='mosh dev.rebuildingsociety.com'
+alias stest='mosh test.rebuildingsociety.com'
+
 
 if [[ "`uname -s`" == "Linux" ]]
 then
