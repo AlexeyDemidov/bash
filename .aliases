@@ -52,6 +52,7 @@ alias smx='mosh mx.nouri.sh'
 alias sst='mosh staging.nouri.sh'
 alias sdev='mosh dev.rebuildingsociety.com'
 alias stest='mosh test.rebuildingsociety.com'
+alias sci='mosh ci.rebsoc.com'
 
 
 if [[ "`uname -s`" == "Linux" ]]
