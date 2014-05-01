@@ -45,7 +45,7 @@ alias bu="bundle update"
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias swt3='ssh webtrans3.dh.bytemark.co.uk'
+alias swt3='mosh wt3.web-translations.co.uk'
 alias swt5='mosh webtrans5.dh.bytemark.co.uk'
 alias swt6='mosh webtrans6.dh.bytemark.co.uk'
 alias smx='mosh mx.nouri.sh'
